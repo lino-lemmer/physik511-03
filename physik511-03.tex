@@ -10,6 +10,33 @@
 \maketitle
 \section{Weizsäckersche Massenformel}
 \subsection{Kinetische energie eines $\alpha$-Teilchens}
+
+Die Differenz der Bindungsenergie des Ausgangskern und denen der entstehenden Kerne geht in die kinetische Energie. Also:
+
+\begin{align*}
+    T_\text{kin} =& E_\text{bind}(A, Z) - \del{E_\text{bind}(A-4,Z-2) +
+    E_{\text{bind,}\alpha}}
+    \intertext{Mit der Bindungsenergie}
+    E_\text{bind}(A,Z) =& a_\text{v}A-a_\text{o}A^{\frac23}-a_\text{c}Z\del{Z-1}
+    A^{-\frac13}-a_\text{s}\frac{\del{A-2Z}^2}{4A} + a_\text{p}A^{-\frac12}
+    \intertext{erhält man}
+    =& -4a_\text{v} - \del{A^{\frac23} - \del{A-4}^{\frac23}}a_\text{o} -
+    \del{Z\del{Z-}A^{-\frac13} - \del{Z-2} \del{Z-3} \del{A-4}^{-\frac13}} a_\text{c} \\
+    & - \del{\frac{\del{A-2Z}^2}{A}-\frac{\del{A-8-2Z}^2}{A-4}}
+    \frac{a_\text{s}}4 + \del{A^{-\frac12}-\del{A-4}^{-\frac12}}a_\text{p}
+    - E_{\text{bind,}\alpha}
+    \intertext{Dabei sind die Konstanten}
+    a_\text{v} =& \SI{15.67}{\mega\electronvolt} \\
+    a_\text{o} =& \SI{17.23}{\mega\electronvolt} \\
+    a_\text{c} =& \SI{0.714}{\mega\electronvolt} \\
+    a_\text{s} =& \SI{93.14}{\mega\electronvolt} \\
+    a_\text{p} =& \begin{cases}
+        \SI{11.2}{\mega\electronvolt} & \text{gg} \\
+        0 & \text{ug und gu} \\
+        \SI{-11.2}{\mega\electronvolt} & \text{uu}
+    \end{cases}
+\end{align*}
+
 \subsection{$\alpha$-Zerfall von $_3^6\text{Li}$}
 \subsection{$\alpha$-Zerfall von $_{57}^{135}\text{La}$}
 
